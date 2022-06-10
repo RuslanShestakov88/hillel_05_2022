@@ -2,4 +2,7 @@
 venv/
 
 #Editirs / IDE
-.idea
+.idea/
+.vscode/
+
+.rockyou.txt/
