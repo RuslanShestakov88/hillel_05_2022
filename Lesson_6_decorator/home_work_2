@@ -1,0 +1,18 @@
+import functools
+
+
+def mask_data(func):
+    @functools.wraps(func)
+    def wrapper(x):
+        for key in x:
+            if key == "name":
+                x["name"] = "serg"
+        return func(x)
+    return wrapper
+
+
+@mask_data
+def get_user(x):
+    return x
+
+print(get_user({"name": "boris", "age": 20}))
