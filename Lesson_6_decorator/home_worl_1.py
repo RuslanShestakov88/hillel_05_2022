@@ -5,13 +5,14 @@ def reverse(func):
         else:
             result = None
         return result
-    return wrapper
 
+    return wrapper
 
 
 @reverse
 def primer(x):
     return x
+
 
 print(primer("3ffff2"))
 print(primer(444))

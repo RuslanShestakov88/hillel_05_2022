@@ -3,13 +3,13 @@ names = ["Dima", "Sasha", "Vanya", "Tanya"]
 print("Out from for names")
 for name in names:
     print(name)
-print("\n")    
+print("\n")
 
 data = iter(names)
 print("Out iter names")
 for d in data:
     print(d)
-print("\n")  
+print("\n")
 
 while True:
     try:
