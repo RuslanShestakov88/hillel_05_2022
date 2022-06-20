@@ -1,6 +1,6 @@
 import sys
-from string import ascii_letters
 from random import choice
+from string import ascii_letters
 
 
 def get_random_string(n: int) -> str:
