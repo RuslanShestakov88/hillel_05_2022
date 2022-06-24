@@ -10,10 +10,14 @@ class Price:
         results = Price(amount=self.amount + other.amount, currency=self.currency)
         return results
 
+    def __sub__(self, other: "Price") -> "Price":
+        results = Price(amount=self.amount - other.amount, currency=self.currency)
+        return results
+
 
 a = Price(13, "usd")
 b = Price(300, "usd")
-c = a + b
+c = a - b
 print(a)
 print(b)
 print(c)
