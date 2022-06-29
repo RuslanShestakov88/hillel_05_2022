@@ -60,16 +60,16 @@ def update_player(players: list[dict], num: int, name: str, age: int) -> None:
 def main():
     repr_players(team)
 
-    add_player(team, num=10, name="Cris", age=31)
-    add_player(team, num=17, name="Bob", age=39)
+    add_player(team, num=10, name="Carl", age=31)
+    add_player(team, num=18, name="Bob", age=29)
     remove_player(players=team, num=17)
 
     repr_players(team, True)
 
-    add_player(team, num=17, name="Bo", age=3)
-    add_player(team, num=10, name="Borja", age=36)
-    update_player(team, num=100, name="Alex", age=60)
-    update_player(team, num=12, name="Alex", age=60)
+    add_player(team, num=18, name="Voo", age=3)
+    add_player(team, num=10, name="Serg", age=26)
+    update_player(team, num=101, name="Fill", age=55)
+    update_player(team, num=12, name="Fill", age=55)
 
     repr_players(team, True, "name")
 
